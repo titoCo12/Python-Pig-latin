@@ -37,9 +37,5 @@ def translatedWrd(wrd):
 # Returns an entire lowercase text translated to piglatin.
 # The text can't have special characters
 def translate(text):
-    wrds = text.split()
-    ret = ""
-    for w in wrds:
-        ret += translatedWrd(w) + ' '
-    return ret[:-1]
+    return (' ').join(translatedWrd(w) for w in text.split())
   
